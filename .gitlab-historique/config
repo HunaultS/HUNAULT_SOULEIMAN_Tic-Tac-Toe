@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "tic"]
+	url = http://localhost:8080/root/hunault_souleiman_tic-tac-toe.git
+	fetch = +refs/heads/*:refs/remotes/tic/*
+[branch "main"]
+	remote = tic
+	merge = refs/heads/main
+[branch "pipeline"]
+	remote = tic
+	merge = refs/heads/pipeline
